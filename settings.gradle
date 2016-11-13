@@ -1,0 +1,4 @@
+rootProject.name = 'JCoinche'
+include ':JCoinche_client'
+include ':JCoinche_server'
+

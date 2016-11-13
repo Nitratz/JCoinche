@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche_client.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche_client_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche_client_main.iml" group="JCoinche_client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche_client_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche_client_test.iml" group="JCoinche_client" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche_main.iml" group="JCoinche" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche_server.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche_server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche_server_main.iml" group="JCoinche_server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche_server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche_server_test.iml" group="JCoinche_server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche_test.iml" group="JCoinche" />
+    </modules>
+  </component>
+</project>

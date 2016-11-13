@@ -1,0 +1,33 @@
+group 'com.jcoinche'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'jacoco'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+jacoco {
+    toolVersion = "0.7.6.201602180812"
+    reportsDir = file("$buildDir/JacocoReportDir")
+    jacocoTestReport {
+        reports {
+            html.enabled = true
+            xml.enabled = true
+            csv.enabled = false
+        }
+    }
+}
+
+dependencies {
+    testCompile('junit:junit:4.12'){
+        exclude group: 'org.hamcrest'
+    }
+    testCompile 'org.hamcrest:hamcrest-library:1.3'
+
+    compile project(':JCoinche_client')
+    compile project(':JCoinche_server')
+}
