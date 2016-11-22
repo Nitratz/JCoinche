@@ -1,5 +1,6 @@
 package JCoinche.Client;
 
+import com.jcoinche.client.JCoinche;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
