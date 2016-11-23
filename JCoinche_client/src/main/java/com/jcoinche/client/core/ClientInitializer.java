@@ -1,6 +1,6 @@
 package com.jcoinche.client.core;
 
-import com.jcoinche.client.CardGame;
+import com.jcoinche.protocol.CardGame;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;

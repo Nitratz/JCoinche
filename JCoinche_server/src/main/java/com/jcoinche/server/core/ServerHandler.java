@@ -1,8 +1,7 @@
 package com.jcoinche.server.core;
 
-import com.jcoinche.server.CardGame;
+import com.jcoinche.protocol.CardGame;
 import com.jcoinche.server.game.Game;
-import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
@@ -21,28 +20,32 @@ public class ServerHandler extends SimpleChannelInboundHandler<CardGame.CardClie
             case ROOM:
                 req = MessageHandler.addInRoom(rooms, msg.getValue(), ctx.channel());
                 break;
+            case START:
+                req = rooms.get(msg.getValue()).startGame(ctx.channel());
+                break;
+            case CARDS:
+                req = rooms.get(msg.getValue()).displayCards(ctx.channel());
+                break;
+            case DRAW:
+                req = rooms.get(msg.getValue()).playerDraw(ctx.channel(), msg.getName().toLowerCase());
+                break;
+            case CALL:
+                rooms.get(msg.getValue()).playerCall(ctx.channel(), msg.getName().toLowerCase());
+                return;
+            case LIAR:
+                req = rooms.get(msg.getValue()).playerLiar(ctx.channel());
+                break;
             default:
-                req = CardGame.CardServer.newBuilder().setType(CardGame.CardServer.SERVER_TYPE.UNRECOGNIZED).build();
+                req = CardGame.CardServer.newBuilder().setType(CardGame.CardServer.SERVER_TYPE.FAILED).build();
                 break;
         }
-        ctx.write(req);
-    }
-
-    @Override
-    public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
-        CardGame.CardServer.Builder req = CardGame.CardServer.newBuilder();
-        req.setName("lol");
-        ChannelFuture cf = ctx.write(req.build());
-
-        ctx.flush();
-        if (!cf.isSuccess()) {
-            System.out.println("Send failed: " + cf.cause());
-        }
+        ctx.writeAndFlush(req);
     }
 
     @Override
     public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
         super.channelUnregistered(ctx);
+        //TODO Handle disconnection
     }
 
     @Override

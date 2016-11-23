@@ -11,6 +11,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche_server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche_server_main.iml" group="JCoinche_server" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche_server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche_server_test.iml" group="JCoinche_server" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/JCoinche_test.iml" filepath="$PROJECT_DIR$/.idea/modules/JCoinche_test.iml" group="JCoinche" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1297150186/Protocol.iml" filepath="$PROJECT_DIR$/.idea/modules/-1297150186/Protocol.iml" group="Protocol" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1297150186/Protocol_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1297150186/Protocol_main.iml" group="Protocol" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1297150186/Protocol_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1297150186/Protocol_test.iml" group="Protocol" />
     </modules>
   </component>
 </project>

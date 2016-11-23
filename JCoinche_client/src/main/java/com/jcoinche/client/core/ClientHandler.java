@@ -1,12 +1,14 @@
 package com.jcoinche.client.core;
 
-import com.jcoinche.client.CardGame;
+import com.jcoinche.protocol.CardGame;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.InterruptedIOException;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -40,7 +42,7 @@ public class ClientHandler extends SimpleChannelInboundHandler<CardGame.CardServ
                     handleMessage(resp);
                 }
             } catch (NumberFormatException e) {
-                System.out.println("Veuillez entrez un nombre valide.");
+                System.out.println("Enter a valid number.");
             } catch (Exception e) {
                 e.printStackTrace();
                 break;
@@ -49,38 +51,92 @@ public class ClientHandler extends SimpleChannelInboundHandler<CardGame.CardServ
     }
 
     private boolean handleRead(String line) throws NumberFormatException {
-        CardGame.CardClient.Builder req = CardGame.CardClient.newBuilder();
-
-        switch (line.split(" ")[0].toLowerCase()) {
+        CardGame.CardClient.Builder req = CardGame.CardClient.newBuilder()
+                .setValue(mRoomNumber);
+        String[] array = line.split(" ");
+        switch (array[0].toLowerCase()) {
+            // -- BYE
             case "bye":
                 channel.close();
                 return true;
+            // -- QUIT
             case "quit":
                 channel.close();
                 return true;
+            // -- START
             case "start":
-                        req.setType(CardGame.CardClient.CLIENT_TYPE.ROOM)
-                        .setValue(mRoomNumber).build();
-                return false;
-            default:
-                if (mRoomNumber == -1) {
-                    mRoomNumber = Integer.parseInt(line);
-                            req.setType(CardGame.CardClient.CLIENT_TYPE.ROOM)
-                            .setValue(mRoomNumber).build();
+                if (mRoomNumber != -1) {
+                    req.setType(CardGame.CardClient.CLIENT_TYPE.START);
                     channel.writeAndFlush(req);
                 }
+                else
+                    System.out.println("You need to create a channel before");
+                return false;
+            // -- LIAR
+            case "liar":
+                if (mRoomNumber != -1) {
+                    req.setType(CardGame.CardClient.CLIENT_TYPE.LIAR);
+                    channel.writeAndFlush(req);
+                }
+                else
+                    System.err.println("Invalid command");
+                return false;
+            // -- CALL
+            case "call":
+                if (mRoomNumber != -1 && array.length == 2) {
+                    req.setType(CardGame.CardClient.CLIENT_TYPE.CALL)
+                            .setName(array[1]);
+                    channel.writeAndFlush(req);
+                }
+                else
+                    System.err.println("Invalid command");
+                return false;
+            // -- DRAW
+            case "draw":
+                if (mRoomNumber != -1 && array.length == 3) {
+                    req.setType(CardGame.CardClient.CLIENT_TYPE.DRAW)
+                            .setName(array[1] + " " + array[2]);
+                    channel.writeAndFlush(req);
+                }
+                else
+                    System.err.println("Invalid command");
+                return false;
+            // -- CARDS
+            case "cards":
+                if (mRoomNumber != -1) {
+                    req.setType(CardGame.CardClient.CLIENT_TYPE.CARDS);
+                    channel.writeAndFlush(req);
+                }
+                else
+                    System.err.println("First, connect or create a room");
+                return false;
+            // -- ROOM
+            case "room":
+                if (mRoomNumber == -1 && array.length == 2) {
+                    mRoomNumber = Integer.parseInt(array[1].toLowerCase());
+                            req.setType(CardGame.CardClient.CLIENT_TYPE.ROOM)
+                            .setValue(mRoomNumber);
+                    channel.writeAndFlush(req);
+                }
+                else
+                    System.err.println("DRAW [ROOM NUMBER]");
+                return false;
+            case "cmd":
+                // TODO Command list
+                return false;
+            default:
                 return false;
         }
     }
 
     private void handleMessage(CardGame.CardServer msg) {
         switch (msg.getType()) {
-            case WELCOME:
+            case CARDS:
+                System.out.println("Your current deck :");
+                System.out.print(msg.getName());
+                break;
+            default:
                 System.out.println(msg.getName());
-                break;
-            case CARD:
-                break;
-            case TURN:
                 break;
         }
     }

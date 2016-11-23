@@ -1,2 +1,3 @@
 rootProject.name = 'JCoinche_server'
-
+include ':Protocol'
+project(':Protocol').projectDir = new File('../Protocol')

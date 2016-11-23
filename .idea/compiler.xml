@@ -19,12 +19,18 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="com.jcoinche.common_main" target="1.5" />
+      <module name="com.jcoinche.common_test" target="1.5" />
+      <module name="Common_main" target="1.5" />
+      <module name="Common_test" target="1.5" />
       <module name="JCoinche_client_main" target="1.8" />
       <module name="JCoinche_client_test" target="1.8" />
-      <module name="JCoinche_main" target="1.5" />
+      <module name="JCoinche_main" target="1.8" />
       <module name="JCoinche_server_main" target="1.8" />
       <module name="JCoinche_server_test" target="1.8" />
-      <module name="JCoinche_test" target="1.5" />
+      <module name="JCoinche_test" target="1.8" />
+      <module name="Protocol_main" target="1.8" />
+      <module name="Protocol_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

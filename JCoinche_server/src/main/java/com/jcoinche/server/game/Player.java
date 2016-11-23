@@ -6,15 +6,25 @@ import java.util.ArrayList;
 
 public class Player {
 
-    ArrayList<Card> mCards;
-    Channel mChannel;
-    boolean isOwner;
-    boolean isPlaying;
+    private ArrayList<Card> mCards;
+    private Channel mChannel;
+    private boolean isOwner;
+    private String mCall;
+
+    private boolean isPlaying;
 
     public Player(boolean owner, Channel ch) {
         this.isOwner = owner;
         mChannel = ch;
         isPlaying = false;
+    }
+
+    public String getCall() {
+        return mCall;
+    }
+
+    public void setCall(String mCall) {
+        this.mCall = mCall;
     }
 
     public Channel getmChannel() {
@@ -33,6 +43,8 @@ public class Player {
         this.mCards = mCards;
     }
 
+    public void addCard(Card card) { this.mCards.add(card); }
+
     public boolean isOwner() {
         return isOwner;
     }
@@ -43,5 +55,16 @@ public class Player {
 
     public void setPlaying(boolean playing) {
         isPlaying = playing;
+    }
+
+    public Card drawCard(int index) {return mCards.remove(index);}
+
+    public int indexByValue(String color, String value) {
+        for (int i = 0; i < mCards.size(); i++) {
+            Card c = mCards.get(i);
+            if (color.equals(c.getmColor().toLowerCase()) && value.equals(c.getmValue().toLowerCase()))
+                return i;
+        }
+        return -1;
     }
 }

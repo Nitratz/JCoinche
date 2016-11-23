@@ -28,6 +28,7 @@ dependencies {
     }
     testCompile 'org.hamcrest:hamcrest-library:1.3'
 
+    compile project(':Protocol')
     compile project(':JCoinche_client')
     compile project(':JCoinche_server')
 }

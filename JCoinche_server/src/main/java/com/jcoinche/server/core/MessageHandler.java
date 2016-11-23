@@ -1,6 +1,6 @@
 package com.jcoinche.server.core;
 
-import com.jcoinche.server.CardGame;
+import com.jcoinche.protocol.CardGame;
 import com.jcoinche.server.game.Game;
 import io.netty.channel.Channel;
 
@@ -33,14 +33,15 @@ public class MessageHandler {
         if (rooms.get(room) == null) {
             rooms.put(room, new Game());
             rooms.get(room).setNewChannel(true, ch);
-            req.setType(CardGame.CardServer.SERVER_TYPE.WELCOME)
+            req.setType(CardGame.CardServer.SERVER_TYPE.ROOM)
                     .setName("You've just created the new game on room " + room);
         }
         else {
             Game game = rooms.get(room);
+            req.setType(CardGame.CardServer.SERVER_TYPE.FAILED);
             if (game.getNbPlayers() < 4) {
                 rooms.get(room).setNewChannel(false, ch);
-                req.setType(CardGame.CardServer.SERVER_TYPE.WELCOME);
+                req.setType(CardGame.CardServer.SERVER_TYPE.ROOM);
                 req.setName("You've just joined the game on room " + room);
             }
             else
@@ -48,4 +49,6 @@ public class MessageHandler {
         }
         return req.build();
     }
+
+
 }
