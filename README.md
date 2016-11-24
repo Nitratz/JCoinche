@@ -1,2 +1,2 @@
-# JPoker
-Poker game made with Netty &amp; Protobuf
+# JCoinche
+Jeu du menteur (jeu de carte) fait avec Netty &amp; Google Protobuf

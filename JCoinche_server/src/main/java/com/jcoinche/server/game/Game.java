@@ -2,7 +2,9 @@ package com.jcoinche.server.game;
 
 import com.jcoinche.protocol.CardGame;
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelFuture;
 import io.netty.channel.group.ChannelGroup;
+import io.netty.channel.group.ChannelGroupFuture;
 import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.util.concurrent.GlobalEventExecutor;
 
@@ -17,8 +19,10 @@ public class Game {
     private static final String[] mValues = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
     private ArrayList<Card> mDeck;
     private boolean isStarted;
+    private ChannelGroup mGroup;
 
     public Game() {
+        mGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
         mDeck = new ArrayList<>();
         mPlayers = new ArrayList<>();
         isStarted = false;
@@ -37,6 +41,11 @@ public class Game {
                 .setName(name);
         for (Player p : mPlayers) {
             p.getmChannel().writeAndFlush(req.build());
+            try {
+                Thread.sleep(50);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -82,6 +91,7 @@ public class Game {
     }
 
     public void setNewChannel(boolean owner, Channel ch) {
+        mGroup.add(ch);
         mPlayers.add(new Player(owner, ch));
     }
 
@@ -89,31 +99,32 @@ public class Game {
         return mPlayers.size();
     }
 
-    public CardGame.CardServer startGame(Channel ch) {
+    public boolean isStarted() {
+        return isStarted;
+    }
+
+    public CardGame.CardServer.Builder startGame(Channel ch) {
         CardGame.CardServer.Builder req = CardGame.CardServer.newBuilder()
                 .setType(CardGame.CardServer.SERVER_TYPE.FAILED)
-                .setName("The game is already running");
-        if (!isStarted) {
-            req.setName("Need 1 more player to start");
-            if (mPlayers.size() <= 4 && (mPlayers.size() == 2 || mPlayers.size() == 4)) {
-                req.setName("You don't have correct rights to start");
-                for (Player p : mPlayers) {
-                    if (p.getmChannel().equals(ch) && p.isOwner()) {
-                        distributeCards();
-                        p.setPlaying(true);
-                        isStarted = true;
-                        announceGeneric("The game has started !");
-                        req.setType(CardGame.CardServer.SERVER_TYPE.TURN)
-                                .setName("It's your turn !");
-                        break;
-                    }
+                .setName("Need 1 more player to start");
+        if (mPlayers.size() <= 4 && (mPlayers.size() == 2 || mPlayers.size() == 4)) {
+            req.setName("You don't have correct rights to start");
+            for (Player p : mPlayers) {
+                if (p.getmChannel().equals(ch) && p.isOwner()) {
+                    distributeCards();
+                    p.setPlaying(true);
+                    isStarted = true;
+                    announceGeneric("The game has started !");
+                    req.setType(CardGame.CardServer.SERVER_TYPE.TURN)
+                            .setName("It's your turn !");
+                    break;
                 }
             }
         }
-        return req.build();
+        return req;
     }
 
-    public CardGame.CardServer displayCards(Channel ch) {
+    public CardGame.CardServer.Builder displayCards(Channel ch) {
         CardGame.CardServer.Builder req = CardGame.CardServer.newBuilder()
                 .setType(CardGame.CardServer.SERVER_TYPE.FAILED)
                 .setName("The game must be started");
@@ -132,89 +143,86 @@ public class Game {
                 }
             }
         }
-        return  req.build();
+        return  req;
     }
 
-    public CardGame.CardServer playerDraw(Channel ch, String card) {
+    public CardGame.CardServer.Builder playerDraw(Channel ch, String card) {
         CardGame.CardServer.Builder req = CardGame.CardServer.newBuilder()
-                .setType(CardGame.CardServer.SERVER_TYPE.FAILED)
-                .setName("The game must be started");
-        if (isStarted) {
-            for (Player p : mPlayers) {
-                if (p.getmChannel().equals(ch)) {
-                    req.setName("It's not your turn !");
-                    if (p.isPlaying()) {
-                        int index = p.indexByValue(card.split(" ")[0], card.split(" ")[1]);
-                        if (index != -1) {
-                            mDeck.add(p.drawCard(index));
-                            req.setType(CardGame.CardServer.SERVER_TYPE.DRAW);
-                            req.setName("You must now announce the color");
-                            //TODO Test Win ?
-                        } else {
-                            req.setName("This card does not exists");
-                        }
-                        break;
-                    }
-                }
-            }
-        }
-        return req.build();
-    }
-
-    public void playerCall(Channel ch, String color) {
-        CardGame.CardServer.Builder req = CardGame.CardServer.newBuilder()
-                .setType(CardGame.CardServer.SERVER_TYPE.FAILED)
-                .setName("The game must be started");
-        if (isStarted) {
-            for (int i = 0; i < mPlayers.size(); i++) {
-                Player p = mPlayers.get(i);
-                if (p.getmChannel().equals(ch)) {
-                    req.setName("It's not your turn !");
-                    if (p.isPlaying()) {
-                        for (String s : mColors) {
-                            if (s.toLowerCase().equals(color)) {
-                                p.setCall(color);
-                                p.setPlaying(false);
-                                announceColor(color, mPlayers.indexOf(p) + 1);
-                                nextPlayerPlaying(mPlayers.indexOf(p));
-                            }
-                        }
-                    }
-                    break;
-                }
-            }
-        }
-    }
-
-    public CardGame.CardServer playerLiar(Channel ch) {
-        CardGame.CardServer.Builder req = CardGame.CardServer.newBuilder()
-                .setType(CardGame.CardServer.SERVER_TYPE.FAILED)
-                .setName("The game must be started");
-        if (isStarted) {
-            req.setType(CardGame.CardServer.SERVER_TYPE.LIAR);
-            for (Player p : mPlayers) {
+                .setType(CardGame.CardServer.SERVER_TYPE.FAILED);
+        for (Player p : mPlayers) {
+            if (p.getmChannel().equals(ch)) {
+                req.setName("It's not your turn !");
                 if (p.isPlaying()) {
-                    int index = mPlayers.indexOf(p);
-                    Player last;
-                    if (index == 0)
-                        last = mPlayers.get(mPlayers.size() - 1);
-                    else
-                        last = mPlayers.get(index - 1);
-                    announceGeneric("Player " + (mPlayers.lastIndexOf(last) + 1) + " is maybe a liar");
-                    if (!last.getCall().equals(mDeck.get(0).getmColor().toLowerCase())) {
-                        announceGeneric("He was a liar !");
-                        req.setName("You are right");
-                        addCardPlayer(last.getmChannel());
+                    int index = p.indexByValue(card.split(" ")[0], card.split(" ")[1]);
+                    if (index != -1) {
+                        mDeck.add(p.drawCard(index));
+                        req.setType(CardGame.CardServer.SERVER_TYPE.DRAW);
+                        req.setName("You must now announce the color");
+                        //TODO Test Win ?
                     } else {
-                        announceGeneric("He was not a liar");
-                        req.setName("You are not right");
-                        addCardPlayer(ch);
+                        req.setName("This card does not exists");
                     }
-                    break;
                 }
+                break;
             }
         }
-        return req.build();
+        return req;
+    }
+
+    public CardGame.CardServer.Builder playerCall(Channel ch, String color) {
+        CardGame.CardServer.Builder req = CardGame.CardServer.newBuilder()
+                .setType(CardGame.CardServer.SERVER_TYPE.FAILED);
+        for (int i = 0; i < mPlayers.size(); i++) {
+            Player p = mPlayers.get(i);
+            if (p.getmChannel().equals(ch)) {
+                req.setName("It's not your turn !");
+                if (p.isPlaying()) {
+                    req = checkColor(p, color, req);
+                }
+                break;
+            }
+        }
+        return req;
+    }
+
+    private CardGame.CardServer.Builder checkColor(Player p, String color, CardGame.CardServer.Builder req) {
+        for (String s : mColors) {
+            if (s.toLowerCase().equals(color)) {
+                p.setCall(color);
+                p.setPlaying(false);
+                req.setName("You called " + color).setType(CardGame.CardServer.SERVER_TYPE.CALL);
+                announceColor(color, mPlayers.indexOf(p) + 1);
+                nextPlayerPlaying(mPlayers.indexOf(p));
+            }
+        }
+        return req;
+    }
+
+    public CardGame.CardServer.Builder playerLiar(Channel ch) {
+        CardGame.CardServer.Builder req = CardGame.CardServer.newBuilder()
+                .setType(CardGame.CardServer.SERVER_TYPE.LIAR);
+        for (Player p : mPlayers) {
+            if (p.isPlaying()) {
+                int index = mPlayers.indexOf(p);
+                Player last;
+                if (index == 0)
+                    last = mPlayers.get(mPlayers.size() - 1);
+                else
+                    last = mPlayers.get(index - 1);
+                announceGeneric("Player " + (mPlayers.lastIndexOf(last) + 1) + " is maybe a liar");
+                if (!last.getCall().equals(mDeck.get(0).getmColor().toLowerCase())) {
+                    announceGeneric("He was a liar !");
+                    req.setName("You are right");
+                    addCardPlayer(last.getmChannel());
+                } else {
+                    announceGeneric("He was not a liar");
+                    req.setName("You are not right");
+                    addCardPlayer(ch);
+                }
+                break;
+            }
+        }
+        return req;
     }
 
     private void addCardPlayer(Channel ch) {

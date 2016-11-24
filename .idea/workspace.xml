@@ -5,94 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b8c8847-293d-4638-89fd-58a55bfc0d48" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardClient$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardClient$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardClient$CLIENT_TYPE$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardClient$CLIENT_TYPE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardClientOrBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardServer$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardServer$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardServer$SERVER_TYPE$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardServer$SERVER_TYPE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardServer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame$CardServerOrBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/CardGame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/CardGame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardClient$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardClient$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardClient$CLIENT_TYPE$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardClient$CLIENT_TYPE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardClientOrBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardServer$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardServer$Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardServer$SERVER_TYPE$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardServer$SERVER_TYPE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardServer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame$CardServerOrBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/CardGame.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/CardGame.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.13/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/.gradle/2.13/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/JCoinche_client/.gradle/2.13/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/.gradle/2.13/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/JCoinche_client/.gradle/2.13/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/.gradle/2.13/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/JCoinche_client/.gradle/2.13/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/.gradle/2.13/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/JCoinche_client/.gradle/2.13/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/core/ClientHandler$1.class" afterPath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/core/ClientHandler$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/core/ClientHandler.class" afterPath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/core/ClientHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/core/ClientInitializer.class" afterPath="$PROJECT_DIR$/JCoinche_client/build/classes/main/com/jcoinche/client/core/ClientInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/build/libs/JCoinche_client-1.0.jar" afterPath="$PROJECT_DIR$/JCoinche_client/build/libs/JCoinche_client-1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/build/test-results/binary/test/results.bin" afterPath="$PROJECT_DIR$/JCoinche_client/build/test-results/binary/test/results.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/.gradle/2.13/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/JCoinche_server/.gradle/2.13/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/.gradle/2.13/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/JCoinche_server/.gradle/2.13/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/.gradle/2.13/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/JCoinche_server/.gradle/2.13/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/.gradle/2.13/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/JCoinche_server/.gradle/2.13/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/core/MessageHandler.class" afterPath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/core/MessageHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/core/ServerHandler$1.class" afterPath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/core/ServerHandler$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/core/ServerHandler.class" afterPath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/core/ServerHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/core/ServerInitializer.class" afterPath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/core/ServerInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/game/Card.class" afterPath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/game/Card.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/game/Game.class" afterPath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/game/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/game/Player.class" afterPath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/game/Player.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/build/libs/JCoinche_server-1.0.jar" afterPath="$PROJECT_DIR$/JCoinche_server/build/libs/JCoinche_server-1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/-1297150186/Protocol.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/-1297150186/Protocol_main.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/-1297150186/Protocol_test.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JCoinche_server/build/classes/main/com/jcoinche/server/core/ServerHandler$1.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/JCoinche_client.iml" afterPath="$PROJECT_DIR$/.idea/modules/JCoinche_client.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/JCoinche_client_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/JCoinche_client_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/JCoinche_client_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/JCoinche_client_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/JCoinche_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/JCoinche_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/JCoinche_server.iml" afterPath="$PROJECT_DIR$/.idea/modules/JCoinche_server.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/JCoinche_server_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/JCoinche_server_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/JCoinche_server_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/JCoinche_server_test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/JCoinche_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/JCoinche_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cards.proto" afterPath="$PROJECT_DIR$/Cards.proto" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/build.gradle" afterPath="$PROJECT_DIR$/JCoinche_client/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/build/reports/tests/classes/JCoinche.Client.JCoincheTest.html" afterPath="$PROJECT_DIR$/JCoinche_client/build/reports/tests/classes/JCoinche.Client.JCoincheTest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/build/reports/tests/index.html" afterPath="$PROJECT_DIR$/JCoinche_client/build/reports/tests/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/build/reports/tests/packages/JCoinche.Client.html" afterPath="$PROJECT_DIR$/JCoinche_client/build/reports/tests/packages/JCoinche.Client.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/build/test-results/TEST-JCoinche.Client.JCoincheTest.xml" afterPath="$PROJECT_DIR$/JCoinche_client/build/test-results/TEST-JCoinche.Client.JCoincheTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/settings.gradle" afterPath="$PROJECT_DIR$/JCoinche_client/settings.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/ClientHandler.java" afterPath="$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/ClientHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/ClientInitializer.java" afterPath="$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/ClientInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/build.gradle" afterPath="$PROJECT_DIR$/JCoinche_server/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/build/tmp/jar/MANIFEST.MF" afterPath="$PROJECT_DIR$/JCoinche_server/build/tmp/jar/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/settings.gradle" afterPath="$PROJECT_DIR$/JCoinche_server/settings.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/MessageHandler.java" afterPath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/MessageHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/ServerHandler.java" afterPath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/ServerHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/ServerInitializer.java" afterPath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/ServerInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Card.java" afterPath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Card.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Game.java" afterPath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Player.java" afterPath="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Protocol/src/main/java/com/jcoinche/protocol/CardGame.java" afterPath="$PROJECT_DIR$/Protocol/src/main/java/com/jcoinche/protocol/CardGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
     </list>
     <ignored path="JCoinche.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -177,29 +103,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Cards.proto" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cards.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="209" column="57" selection-start-line="209" selection-start-column="57" selection-end-line="209" selection-end-column="57" />
+            <state relative-caret-position="234">
+              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
               <folding>
+                <element signature="method#announceColor#0;class#Game#0" expanded="false" />
                 <element signature="method#distributeCards#0;class#Game#0" expanded="false" />
                 <element signature="method#nextPlayerPlaying#0;class#Game#0" expanded="false" />
-                <element signature="e#2752#2753#0" expanded="true" />
-                <element signature="e#2803#2804#0" expanded="true" />
                 <element signature="method#startGame#0;class#Game#0" expanded="false" />
-                <element signature="method#displayCards#0;class#Game#0" expanded="false" />
-                <element signature="method#playerDraw#0;class#Game#0" expanded="false" />
+                <element signature="method#playerCall#0;class#Game#0" expanded="false" />
+                <element signature="method#checkColor#0;class#Game#0" expanded="false" />
+                <element signature="method#playerLiar#0;class#Game#0" expanded="false" />
+                <element signature="method#addCardPlayer#0;class#Game#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -208,8 +125,8 @@
       <file leaf-file-name="ClientHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="971">
-              <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+            <state relative-caret-position="339">
+              <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -218,8 +135,8 @@
       <file leaf-file-name="ServerHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/ServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="156">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -227,12 +144,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Player.java">
+      <file leaf-file-name="MessageHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/MessageHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="252">
+              <caret line="94" column="57" selection-start-line="94" selection-start-column="57" selection-end-line="94" selection-end-column="57" />
+              <folding>
+                <element signature="method#welcomeClient#0;class#MessageHandler#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Protocol/src/main/java/com/jcoinche/protocol/CardGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="284" column="0" selection-start-line="284" selection-start-column="0" selection-end-line="284" selection-end-column="0" />
+              <folding>
+                <element signature="e#8208#8209#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -256,6 +187,7 @@
         <entry key="$PROJECT_DIR$" value="C:\Users\LIEGEM\.gradle\wrapper\dists\gradle-2.13-all\1b9wlm73elu4cqnbc0rk7r7qn\gradle-2.13" />
         <entry key="$PROJECT_DIR$/JCoinche_client" value="C:\Users\LIEGEM\.gradle\wrapper\dists\gradle-2.13-all\1b9wlm73elu4cqnbc0rk7r7qn\gradle-2.13" />
         <entry key="$PROJECT_DIR$/JCoinche_server" value="C:\Users\LIEGEM\.gradle\wrapper\dists\gradle-2.13-all\1b9wlm73elu4cqnbc0rk7r7qn\gradle-2.13" />
+        <entry key="$PROJECT_DIR$/Protocol" value="C:\Users\LIEGEM\.gradle\wrapper\dists\gradle-2.13-all\1b9wlm73elu4cqnbc0rk7r7qn\gradle-2.13" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -263,6 +195,7 @@
         <entry key="$PROJECT_DIR$" value="2.13" />
         <entry key="$PROJECT_DIR$/JCoinche_client" value="2.13" />
         <entry key="$PROJECT_DIR$/JCoinche_server" value="2.13" />
+        <entry key="$PROJECT_DIR$/Protocol" value="2.13" />
       </map>
     </option>
     <option name="availableProjects">
@@ -330,6 +263,22 @@
               </ExternalProjectPojo>
               <ExternalProjectPojo>
                 <option name="name" value=":Protocol" />
+                <option name="path" value="$PROJECT_DIR$/Protocol" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="Protocol" />
+              <option name="path" value="$PROJECT_DIR$/Protocol" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="Protocol" />
                 <option name="path" value="$PROJECT_DIR$/Protocol" />
               </ExternalProjectPojo>
             </list>
@@ -767,124 +716,134 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':Protocol'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:components" />
+                <option name="description" value="Displays the components produced by root project 'Protocol'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:buildDependents" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':Protocol'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:projects" />
+                <option name="description" value="Displays the sub-projects of root project 'Protocol'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:classes" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':Protocol'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:buildEnvironment" />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'Protocol'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="wrapper" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:testClasses" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="testClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:javadoc" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:jar" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':Protocol'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:model" />
+                <option name="description" value="Displays the configuration model of root project 'Protocol'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:processResources" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':Protocol'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:tasks" />
+                <option name="description" value="Displays the tasks runnable from root project 'Protocol'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="init" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:test" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:compileJava" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':Protocol'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:dependencyInsight" />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'Protocol'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:check" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:assemble" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:clean" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:compileTestJava" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':Protocol'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:dependencies" />
+                <option name="description" value="Displays all dependencies declared in root project 'Protocol'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:processTestResources" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="processTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:help" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:build" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:buildNeeded" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':Protocol'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/JCoinche_client" />
-                <option name="name" value=":Protocol:properties" />
+                <option name="description" value="Displays the properties of root project 'Protocol'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/Protocol" />
+                <option name="name" value="properties" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -1069,15 +1028,15 @@
             </ExternalProjectBuildClasspathPojo>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/JCoinche_client">
+        <entry key="$PROJECT_DIR$/JCoinche_server">
           <value>
             <ExternalProjectBuildClasspathPojo>
               <option name="modulesBuildClasspath">
                 <map>
-                  <entry key="$PROJECT_DIR$/JCoinche_client">
+                  <entry key="$PROJECT_DIR$/JCoinche_server">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$/JCoinche_client" />
+                        <option name="path" value="$PROJECT_DIR$/JCoinche_server" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
@@ -1090,7 +1049,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="JCoinche_client" />
+              <option name="name" value="JCoinche_server" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-all/1b9wlm73elu4cqnbc0rk7r7qn/gradle-2.13/src/announce" />
@@ -1212,8 +1171,93 @@
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-all/1b9wlm73elu4cqnbc0rk7r7qn/gradle-2.13/lib/plugins/gradle-testing-native-2.13.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-all/1b9wlm73elu4cqnbc0rk7r7qn/gradle-2.13/lib/plugins/gradle-tooling-api-builders-2.13.jar" />
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-all/1b9wlm73elu4cqnbc0rk7r7qn/gradle-2.13/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$PROJECT_DIR$/JCoinche_client/buildSrc/src/main/java" />
-                  <option value="$PROJECT_DIR$/JCoinche_client/buildSrc/src/main/groovy" />
+                  <option value="$PROJECT_DIR$/JCoinche_server/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/JCoinche_server/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Protocol">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$/Protocol">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/Protocol" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="Protocol" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-base-services-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-base-services-groovy-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-cli-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-core-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-docs-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-installation-beacon-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-launcher-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-messaging-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-model-core-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-model-groovy-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-native-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-open-api-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-resources-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-tooling-api-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-ui-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/gradle-wrapper-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/groovy-all-2.4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-announce-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-antlr-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-build-comparison-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-build-init-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-code-quality-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-dependency-management-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-diagnostics-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-ear-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-ide-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-ide-native-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-ivy-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-jacoco-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-javascript-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-jetty-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-language-groovy-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-language-java-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-language-jvm-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-language-native-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-language-scala-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-maven-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-osgi-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-platform-base-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-platform-jvm-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-platform-native-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-platform-play-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-plugin-development-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-plugin-use-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-plugins-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-publish-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-reporting-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-resources-http-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-resources-s3-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-resources-sftp-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-scala-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-signing-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-sonar-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-test-kit-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-testing-base-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-testing-jvm-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-testing-native-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/gradle-tooling-api-builders-2.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-bin/4xsgxlfjcxvrea7akf941nvc7/gradle-2.13/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/Protocol/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/Protocol/buildSrc/src/main/groovy" />
                 </list>
               </option>
             </ExternalProjectBuildClasspathPojo>
@@ -1261,17 +1305,18 @@
         <option value="$PROJECT_DIR$/Protocol/src/main/java/com/jcoinche/protocol/Main.java" />
         <option value="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/ServerInitializer.java" />
         <option value="$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/ClientInitializer.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/JCoinche_client/settings.gradle" />
         <option value="$PROJECT_DIR$/JCoinche_server/settings.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/JCoinche_server/build.gradle" />
         <option value="$PROJECT_DIR$/JCoinche_client/build.gradle" />
-        <option value="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/MessageHandler.java" />
-        <option value="$PROJECT_DIR$/Cards.proto" />
         <option value="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Player.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/Helper.java" />
+        <option value="$PROJECT_DIR$/Cards.proto" />
         <option value="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/ServerHandler.java" />
         <option value="$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/MessageHandler.java" />
         <option value="$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Game.java" />
       </list>
     </option>
@@ -1323,31 +1368,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Android Instrumentation Tests" />
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Tests">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1408,126 +1428,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="JCoinche_client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1602,56 +1502,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Android Instrumentation Tests" />
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche_client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+        <subPane subId="Tests">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JCoinche_client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2373,6 +2246,7 @@
       <workItem from="1479885407440" duration="35000" />
       <workItem from="1479892529158" duration="6587000" />
       <workItem from="1479921109910" duration="18487000" />
+      <workItem from="1479997777550" duration="9121000" />
     </task>
     <servers />
   </component>
@@ -2409,7 +2283,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130888000" />
+    <option name="totallyTimeSpent" value="140009000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2421,22 +2295,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32293987" sideWeight="0.52025586" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31848553" sideWeight="0.47974414" order="2" side_tool="false" content_ui="tabs" x="22" y="376" width="1876" height="286" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31848553" sideWeight="0.47974414" order="2" side_tool="false" content_ui="tabs" x="22" y="376" width="1876" height="286" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24721603" sideWeight="0.48134327" order="10" side_tool="false" content_ui="tabs" x="0" y="405" width="1920" height="229" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25426438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25426438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19349681" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2448,11 +2324,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2471,12 +2345,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Game.java</url>
-          <line>43</line>
+          <line>149</line>
           <properties />
-          <option name="timeStamp" value="118" />
+          <option name="timeStamp" value="135" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="124" />
+      <option name="time" value="137" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2485,20 +2359,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/ClientTestInitializer.java" />
     <entry file="file://$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/ClientTestHandler.java" />
     <entry file="file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/Cards.java" />
     <entry file="file://$PROJECT_DIR$/JCoinche_client/gradlew">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.6.Final/699ff4842f3ad4aff00b0835f07fede8563e4513/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/group/ChannelGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -2587,20 +2453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/JCoinche.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="78" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-all/1b9wlm73elu4cqnbc0rk7r7qn/gradle-2.13/src/core/org/gradle/api/initialization/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -2672,14 +2524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.6.Final/699ff4842f3ad4aff00b0835f07fede8563e4513/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="926" column="0" selection-start-line="926" selection-start-column="0" selection-end-line="926" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.6.Final/699ff4842f3ad4aff00b0835f07fede8563e4513/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/nio/AbstractNioByteChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -2692,14 +2536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/JCoincheClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -2719,16 +2555,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="490" column="13" selection-start-line="490" selection-start-column="13" selection-end-line="490" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Protocol/src/main/java/com/jcoinche/protocol/CardGame.java">
+    <entry file="file://$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="284" column="0" selection-start-line="284" selection-start-column="0" selection-end-line="284" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/JCoinche.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/JCoincheClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cards.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.6.Final/699ff4842f3ad4aff00b0835f07fede8563e4513/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.6.Final/699ff4842f3ad4aff00b0835f07fede8563e4513/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
           <folding>
-            <element signature="e#8208#8209#0" expanded="false" />
+            <element signature="e#5566#5567#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2736,49 +2619,17 @@
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.6.Final/699ff4842f3ad4aff00b0835f07fede8563e4513/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
-          <caret line="373" column="0" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/MessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
-            <element signature="method#welcomeClient#0;class#MessageHandler#0" expanded="false" />
+            <element signature="e#4588#4589#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.6.Final/699ff4842f3ad4aff00b0835f07fede8563e4513/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/SimpleChannelInboundHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cards.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/ServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="156">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2787,24 +2638,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JCoinche_client/src/main/java/com/jcoinche/client/core/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="971">
-          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        <state relative-caret-position="339">
+          <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/core/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="94" column="57" selection-start-line="94" selection-start-column="57" selection-end-line="94" selection-end-column="57" />
+          <folding>
+            <element signature="method#welcomeClient#0;class#MessageHandler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.6.Final/699ff4842f3ad4aff00b0835f07fede8563e4513/netty-all-4.1.6.Final-sources.jar!/io/netty/channel/group/ChannelGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="179" column="23" selection-start-line="179" selection-start-column="23" selection-end-line="179" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Protocol/src/main/java/com/jcoinche/protocol/CardGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="284" column="0" selection-start-line="284" selection-start-column="0" selection-end-line="284" selection-end-column="0" />
+          <folding>
+            <element signature="e#8208#8209#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JCoinche_server/src/main/java/com/jcoinche/server/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="209" column="57" selection-start-line="209" selection-start-column="57" selection-end-line="209" selection-end-column="57" />
+        <state relative-caret-position="234">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
           <folding>
+            <element signature="method#announceColor#0;class#Game#0" expanded="false" />
             <element signature="method#distributeCards#0;class#Game#0" expanded="false" />
             <element signature="method#nextPlayerPlaying#0;class#Game#0" expanded="false" />
-            <element signature="e#2752#2753#0" expanded="true" />
-            <element signature="e#2803#2804#0" expanded="true" />
             <element signature="method#startGame#0;class#Game#0" expanded="false" />
-            <element signature="method#displayCards#0;class#Game#0" expanded="false" />
-            <element signature="method#playerDraw#0;class#Game#0" expanded="false" />
+            <element signature="method#playerCall#0;class#Game#0" expanded="false" />
+            <element signature="method#checkColor#0;class#Game#0" expanded="false" />
+            <element signature="method#playerLiar#0;class#Game#0" expanded="false" />
+            <element signature="method#addCardPlayer#0;class#Game#0" expanded="false" />
           </folding>
         </state>
       </provider>

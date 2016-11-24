@@ -829,21 +829,26 @@ public final class CardGame {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional string Name = 1;</code>
+     * <code>optional uint32 Value = 1;</code>
+     */
+    int getValue();
+
+    /**
+     * <code>optional string Name = 2;</code>
      */
     java.lang.String getName();
     /**
-     * <code>optional string Name = 1;</code>
+     * <code>optional string Name = 2;</code>
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
-     * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 2;</code>
+     * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 3;</code>
      */
     int getTypeValue();
     /**
-     * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 2;</code>
+     * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 3;</code>
      */
     com.jcoinche.protocol.CardGame.CardServer.SERVER_TYPE getType();
   }
@@ -859,6 +864,7 @@ public final class CardGame {
       super(builder);
     }
     private CardServer() {
+      value_ = 0;
       name_ = "";
       type_ = 0;
     }
@@ -888,13 +894,18 @@ public final class CardGame {
               }
               break;
             }
-            case 10: {
+            case 8: {
+
+              value_ = input.readUInt32();
+              break;
+            }
+            case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
               name_ = s;
               break;
             }
-            case 16: {
+            case 24: {
               int rawValue = input.readEnum();
 
               type_ = rawValue;
@@ -1093,10 +1104,19 @@ public final class CardGame {
       // @@protoc_insertion_point(enum_scope:com.jcoinche.protocol.CardServer.SERVER_TYPE)
     }
 
-    public static final int NAME_FIELD_NUMBER = 1;
+    public static final int VALUE_FIELD_NUMBER = 1;
+    private int value_;
+    /**
+     * <code>optional uint32 Value = 1;</code>
+     */
+    public int getValue() {
+      return value_;
+    }
+
+    public static final int NAME_FIELD_NUMBER = 2;
     private volatile java.lang.Object name_;
     /**
-     * <code>optional string Name = 1;</code>
+     * <code>optional string Name = 2;</code>
      */
     public java.lang.String getName() {
       java.lang.Object ref = name_;
@@ -1111,7 +1131,7 @@ public final class CardGame {
       }
     }
     /**
-     * <code>optional string Name = 1;</code>
+     * <code>optional string Name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNameBytes() {
@@ -1127,16 +1147,16 @@ public final class CardGame {
       }
     }
 
-    public static final int TYPE_FIELD_NUMBER = 2;
+    public static final int TYPE_FIELD_NUMBER = 3;
     private int type_;
     /**
-     * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 2;</code>
+     * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 3;</code>
      */
     public int getTypeValue() {
       return type_;
     }
     /**
-     * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 2;</code>
+     * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 3;</code>
      */
     public com.jcoinche.protocol.CardGame.CardServer.SERVER_TYPE getType() {
       com.jcoinche.protocol.CardGame.CardServer.SERVER_TYPE result = com.jcoinche.protocol.CardGame.CardServer.SERVER_TYPE.valueOf(type_);
@@ -1155,11 +1175,14 @@ public final class CardGame {
 
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (value_ != 0) {
+        output.writeUInt32(1, value_);
+      }
       if (!getNameBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
       }
       if (type_ != com.jcoinche.protocol.CardGame.CardServer.SERVER_TYPE.WELCOME.getNumber()) {
-        output.writeEnum(2, type_);
+        output.writeEnum(3, type_);
       }
     }
 
@@ -1168,12 +1191,16 @@ public final class CardGame {
       if (size != -1) return size;
 
       size = 0;
+      if (value_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, value_);
+      }
       if (!getNameBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
       }
       if (type_ != com.jcoinche.protocol.CardGame.CardServer.SERVER_TYPE.WELCOME.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, type_);
+          .computeEnumSize(3, type_);
       }
       memoizedSize = size;
       return size;
@@ -1191,6 +1218,8 @@ public final class CardGame {
       com.jcoinche.protocol.CardGame.CardServer other = (com.jcoinche.protocol.CardGame.CardServer) obj;
 
       boolean result = true;
+      result = result && (getValue()
+          == other.getValue());
       result = result && getName()
           .equals(other.getName());
       result = result && type_ == other.type_;
@@ -1204,6 +1233,8 @@ public final class CardGame {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (37 * hash) + VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + getValue();
       hash = (37 * hash) + NAME_FIELD_NUMBER;
       hash = (53 * hash) + getName().hashCode();
       hash = (37 * hash) + TYPE_FIELD_NUMBER;
@@ -1326,6 +1357,8 @@ public final class CardGame {
       }
       public Builder clear() {
         super.clear();
+        value_ = 0;
+
         name_ = "";
 
         type_ = 0;
@@ -1352,6 +1385,7 @@ public final class CardGame {
 
       public com.jcoinche.protocol.CardGame.CardServer buildPartial() {
         com.jcoinche.protocol.CardGame.CardServer result = new com.jcoinche.protocol.CardGame.CardServer(this);
+        result.value_ = value_;
         result.name_ = name_;
         result.type_ = type_;
         onBuilt();
@@ -1395,6 +1429,9 @@ public final class CardGame {
 
       public Builder mergeFrom(com.jcoinche.protocol.CardGame.CardServer other) {
         if (other == com.jcoinche.protocol.CardGame.CardServer.getDefaultInstance()) return this;
+        if (other.getValue() != 0) {
+          setValue(other.getValue());
+        }
         if (!other.getName().isEmpty()) {
           name_ = other.name_;
           onChanged();
@@ -1428,9 +1465,35 @@ public final class CardGame {
         return this;
       }
 
+      private int value_ ;
+      /**
+       * <code>optional uint32 Value = 1;</code>
+       */
+      public int getValue() {
+        return value_;
+      }
+      /**
+       * <code>optional uint32 Value = 1;</code>
+       */
+      public Builder setValue(int value) {
+        
+        value_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional uint32 Value = 1;</code>
+       */
+      public Builder clearValue() {
+        
+        value_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object name_ = "";
       /**
-       * <code>optional string Name = 1;</code>
+       * <code>optional string Name = 2;</code>
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -1445,7 +1508,7 @@ public final class CardGame {
         }
       }
       /**
-       * <code>optional string Name = 1;</code>
+       * <code>optional string Name = 2;</code>
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -1461,7 +1524,7 @@ public final class CardGame {
         }
       }
       /**
-       * <code>optional string Name = 1;</code>
+       * <code>optional string Name = 2;</code>
        */
       public Builder setName(
           java.lang.String value) {
@@ -1474,7 +1537,7 @@ public final class CardGame {
         return this;
       }
       /**
-       * <code>optional string Name = 1;</code>
+       * <code>optional string Name = 2;</code>
        */
       public Builder clearName() {
         
@@ -1483,7 +1546,7 @@ public final class CardGame {
         return this;
       }
       /**
-       * <code>optional string Name = 1;</code>
+       * <code>optional string Name = 2;</code>
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -1499,13 +1562,13 @@ public final class CardGame {
 
       private int type_ = 0;
       /**
-       * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 2;</code>
+       * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 3;</code>
        */
       public int getTypeValue() {
         return type_;
       }
       /**
-       * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 2;</code>
+       * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 3;</code>
        */
       public Builder setTypeValue(int value) {
         type_ = value;
@@ -1513,14 +1576,14 @@ public final class CardGame {
         return this;
       }
       /**
-       * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 2;</code>
+       * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 3;</code>
        */
       public com.jcoinche.protocol.CardGame.CardServer.SERVER_TYPE getType() {
         com.jcoinche.protocol.CardGame.CardServer.SERVER_TYPE result = com.jcoinche.protocol.CardGame.CardServer.SERVER_TYPE.valueOf(type_);
         return result == null ? com.jcoinche.protocol.CardGame.CardServer.SERVER_TYPE.UNRECOGNIZED : result;
       }
       /**
-       * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 2;</code>
+       * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 3;</code>
        */
       public Builder setType(com.jcoinche.protocol.CardGame.CardServer.SERVER_TYPE value) {
         if (value == null) {
@@ -1532,7 +1595,7 @@ public final class CardGame {
         return this;
       }
       /**
-       * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 2;</code>
+       * <code>optional .com.jcoinche.protocol.CardServer.SERVER_TYPE Type = 3;</code>
        */
       public Builder clearType() {
         
@@ -1614,13 +1677,13 @@ public final class CardGame {
       "ardClient.CLIENT_TYPE\"j\n\013CLIENT_TYPE\022\r\n\t" +
       "CONNEXION\020\000\022\010\n\004ROOM\020\001\022\010\n\004CALL\020\002\022\010\n\004DRAW\020" +
       "\003\022\t\n\005CARDS\020\004\022\010\n\004LIAR\020\005\022\t\n\005START\020\006\022\016\n\nDIS" +
-      "CONNECT\020\007\"\332\001\n\nCardServer\022\014\n\004Name\030\001 \001(\t\022;" +
-      "\n\004Type\030\002 \001(\0162-.com.jcoinche.protocol.Car" +
-      "dServer.SERVER_TYPE\"\200\001\n\013SERVER_TYPE\022\013\n\007W" +
-      "ELCOME\020\000\022\t\n\005CARDS\020\001\022\010\n\004TURN\020\002\022\010\n\004DRAW\020\003\022",
-      "\010\n\004CALL\020\004\022\010\n\004ROOM\020\005\022\010\n\004LIAR\020\006\022\013\n\007STARTED" +
-      "\020\007\022\016\n\nDISCONNECT\020\010\022\n\n\006FAILED\020\tB\nB\010CardGa" +
-      "meb\006proto3"
+      "CONNECT\020\007\"\351\001\n\nCardServer\022\r\n\005Value\030\001 \001(\r\022" +
+      "\014\n\004Name\030\002 \001(\t\022;\n\004Type\030\003 \001(\0162-.com.jcoinc" +
+      "he.protocol.CardServer.SERVER_TYPE\"\200\001\n\013S" +
+      "ERVER_TYPE\022\013\n\007WELCOME\020\000\022\t\n\005CARDS\020\001\022\010\n\004TU",
+      "RN\020\002\022\010\n\004DRAW\020\003\022\010\n\004CALL\020\004\022\010\n\004ROOM\020\005\022\010\n\004LI" +
+      "AR\020\006\022\013\n\007STARTED\020\007\022\016\n\nDISCONNECT\020\010\022\n\n\006FAI" +
+      "LED\020\tB\nB\010CardGameb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1645,7 +1708,7 @@ public final class CardGame {
     internal_static_com_jcoinche_protocol_CardServer_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_jcoinche_protocol_CardServer_descriptor,
-        new java.lang.String[] { "Name", "Type", });
+        new java.lang.String[] { "Value", "Name", "Type", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -6,9 +6,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.InterruptedIOException;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -65,61 +63,27 @@ public class ClientHandler extends SimpleChannelInboundHandler<CardGame.CardServ
                 return true;
             // -- START
             case "start":
-                if (mRoomNumber != -1) {
-                    req.setType(CardGame.CardClient.CLIENT_TYPE.START);
-                    channel.writeAndFlush(req);
-                }
-                else
-                    System.out.println("You need to create a channel before");
+                checkCommand(array, 1, CardGame.CardClient.CLIENT_TYPE.START, 0);
                 return false;
             // -- LIAR
             case "liar":
-                if (mRoomNumber != -1) {
-                    req.setType(CardGame.CardClient.CLIENT_TYPE.LIAR);
-                    channel.writeAndFlush(req);
-                }
-                else
-                    System.err.println("Invalid command");
+                checkCommand(array, 1, CardGame.CardClient.CLIENT_TYPE.LIAR, 0);
                 return false;
             // -- CALL
             case "call":
-                if (mRoomNumber != -1 && array.length == 2) {
-                    req.setType(CardGame.CardClient.CLIENT_TYPE.CALL)
-                            .setName(array[1]);
-                    channel.writeAndFlush(req);
-                }
-                else
-                    System.err.println("Invalid command");
+                checkCommand(array, 2, CardGame.CardClient.CLIENT_TYPE.CALL, 0);
                 return false;
             // -- DRAW
             case "draw":
-                if (mRoomNumber != -1 && array.length == 3) {
-                    req.setType(CardGame.CardClient.CLIENT_TYPE.DRAW)
-                            .setName(array[1] + " " + array[2]);
-                    channel.writeAndFlush(req);
-                }
-                else
-                    System.err.println("Invalid command");
+                checkCommand(array, 3, CardGame.CardClient.CLIENT_TYPE.DRAW, 0);
                 return false;
             // -- CARDS
             case "cards":
-                if (mRoomNumber != -1) {
-                    req.setType(CardGame.CardClient.CLIENT_TYPE.CARDS);
-                    channel.writeAndFlush(req);
-                }
-                else
-                    System.err.println("First, connect or create a room");
+                checkCommand(array, 1, CardGame.CardClient.CLIENT_TYPE.CARDS, 0);
                 return false;
             // -- ROOM
             case "room":
-                if (mRoomNumber == -1 && array.length == 2) {
-                    mRoomNumber = Integer.parseInt(array[1].toLowerCase());
-                            req.setType(CardGame.CardClient.CLIENT_TYPE.ROOM)
-                            .setValue(mRoomNumber);
-                    channel.writeAndFlush(req);
-                }
-                else
-                    System.err.println("DRAW [ROOM NUMBER]");
+                checkCommand(array, 2, CardGame.CardClient.CLIENT_TYPE.ROOM, mRoomNumber);
                 return false;
             case "cmd":
                 // TODO Command list
@@ -129,11 +93,38 @@ public class ClientHandler extends SimpleChannelInboundHandler<CardGame.CardServ
         }
     }
 
+    private void checkCommand(String[] array, int len, CardGame.CardClient.CLIENT_TYPE type, int value) {
+        CardGame.CardClient.Builder req = CardGame.CardClient.newBuilder();
+        if (mRoomNumber == -1 && type == CardGame.CardClient.CLIENT_TYPE.ROOM && array.length == 2) {
+            req.setType(type).setValue(Integer.parseInt(array[1]));
+            channel.writeAndFlush(req.build());
+        }
+        else if (mRoomNumber != -1 && array.length == len) {
+            String name = array[0];
+            if (len > 1) {
+                StringBuilder str = new StringBuilder();
+                for (int i = 1; i < array.length; i++) {
+                    str.append(array[i]);
+                    str.append(" ");
+                }
+                name = str.toString().substring(0, str.length() - 1);
+            }
+            req.setName(name).setType(type).setValue(mRoomNumber);
+            channel.writeAndFlush(req.build());
+        }
+        else
+            System.out.println("Invalid command");
+    }
+
     private void handleMessage(CardGame.CardServer msg) {
         switch (msg.getType()) {
             case CARDS:
                 System.out.println("Your current deck :");
                 System.out.print(msg.getName());
+                break;
+            case ROOM:
+                mRoomNumber = msg.getValue();
+                System.out.println(msg.getName());
                 break;
             default:
                 System.out.println(msg.getName());
@@ -142,8 +133,8 @@ public class ClientHandler extends SimpleChannelInboundHandler<CardGame.CardServ
     }
 
     @Override
-    public void channelRegistered(ChannelHandlerContext ctx) {
-        channel = ctx.channel();
+    public void channelRegistered(ChannelHandlerContext ctx) throws Exception {
+        channel= ctx.channel();
     }
 
     @Override

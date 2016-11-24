@@ -7,6 +7,7 @@ apply plugin: 'jacoco'
 sourceCompatibility = 1.8
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
