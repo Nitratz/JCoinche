@@ -87,7 +87,7 @@ public class ClientHandler extends SimpleChannelInboundHandler<CardGame.CardServ
             case "room":
                 checkCommand(array, 2, CardGame.CardClient.CLIENT_TYPE.ROOM);
                 return false;
-            case "cmd":
+            case "rules":
                 printCommands();
                 return false;
             default:
@@ -170,7 +170,7 @@ public class ClientHandler extends SimpleChannelInboundHandler<CardGame.CardServ
         str.append("List of Commands :\n");
         str.append("ROOM [NUMBER]\n");
         str.append("START [NO ARGS]\n");
-        str.append("CARDS [NO ARGS\n");
+        str.append("CARDS [NO ARGS]\n");
         str.append("DRAW [CARD_COLOR & CARD_VALUE] (ex: Spades 9)\n");
         str.append("CALL [CARD_COLOR]\n");
         str.append("LIAR [NO ARGS]\n");

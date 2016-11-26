@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jcoinche.server.game.GameTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-11-26T17:36:22" hostname="LIEGEM-PC" time="1.639">
+  <properties/>
+  <testcase name="testDisplayCards" classname="com.jcoinche.server.game.GameTest" time="0.166"/>
+  <testcase name="testStartGame" classname="com.jcoinche.server.game.GameTest" time="0.322"/>
+  <testcase name="testFindPlayer" classname="com.jcoinche.server.game.GameTest" time="0.173"/>
+  <testcase name="testStartGameOther" classname="com.jcoinche.server.game.GameTest" time="0.162"/>
+  <testcase name="testPlayerCall" classname="com.jcoinche.server.game.GameTest" time="0.165"/>
+  <testcase name="testPlayerDraw" classname="com.jcoinche.server.game.GameTest" time="0.163"/>
+  <testcase name="testPlayerLiar" classname="com.jcoinche.server.game.GameTest" time="0.484"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

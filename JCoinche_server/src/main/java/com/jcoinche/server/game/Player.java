@@ -16,6 +16,8 @@ public class Player {
     public Player(boolean owner, Channel ch) {
         this.isOwner = owner;
         mChannel = ch;
+        mCall = "";
+        mCards = null;
         isPlaying = false;
     }
 

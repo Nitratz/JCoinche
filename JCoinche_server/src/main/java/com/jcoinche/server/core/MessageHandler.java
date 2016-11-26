@@ -28,14 +28,12 @@ public class MessageHandler {
     }
 
     private static int findChannelInRoom(HashMap<Integer, Game> rooms, Channel ch) {
-        int size = rooms.size();
-
-        for (int i = 0; i < size; i++) {
-            Game cur = rooms.get(i);
+        for (HashMap.Entry<Integer, Game> entry : rooms.entrySet()) {
+            Game cur = entry.getValue();
             ArrayList<Player> players = cur.getPlayers();
             for (Player p : players) {
                 if (p.getmChannel().equals(ch))
-                    return i;
+                    return entry.getKey();
             }
         }
         return -42;
@@ -45,6 +43,7 @@ public class MessageHandler {
         CardGame.CardServer.Builder req = CardGame.CardServer.newBuilder()
                 .setType(CardGame.CardServer.SERVER_TYPE.FAILED).setName("You must create a room before");
         Game room;
+        Player player = null;
         boolean isStarted = false;
         if (msg.getValue() == -1)
             return req.build();
@@ -62,6 +61,8 @@ public class MessageHandler {
             req.setName("The game is already running");
             return req.build();
         }
+        if (type != CardGame.CardClient.CLIENT_TYPE.ROOM && type != CardGame.CardClient.CLIENT_TYPE.CONNEXION)
+            player = room.findPlayerByChannel(ctx.channel());
         switch (msg.getType()) {
             case CONNEXION:
                 req = welcomeClient(rooms);
@@ -70,19 +71,19 @@ public class MessageHandler {
                 req = addInRoom(rooms, msg.getValue(), ctx.channel());
                 break;
             case START:
-                req = rooms.get(msg.getValue()).startGame(ctx.channel());
+                req = rooms.get(msg.getValue()).startGame(player);
                 break;
             case CARDS:
-                req = rooms.get(msg.getValue()).displayCards(ctx.channel());
+                req = rooms.get(msg.getValue()).displayCards(player);
                 break;
             case DRAW:
-                req = rooms.get(msg.getValue()).playerDraw(ctx.channel(), msg.getName().toLowerCase());
+                req = rooms.get(msg.getValue()).playerDraw(player, msg.getName().toLowerCase());
                 break;
             case CALL:
-                req = rooms.get(msg.getValue()).playerCall(ctx.channel(), msg.getName().toLowerCase());
+                req = rooms.get(msg.getValue()).playerCall(player, msg.getName().toLowerCase());
                 break;
             case LIAR:
-                req = rooms.get(msg.getValue()).playerLiar(ctx.channel());
+                req = rooms.get(msg.getValue()).playerLiar(player);
                 break;
             default:
                 req = CardGame.CardServer.newBuilder().setType(CardGame.CardServer.SERVER_TYPE.FAILED);
@@ -91,7 +92,7 @@ public class MessageHandler {
         return req.build();
     }
 
-    private static CardGame.CardServer.Builder welcomeClient(HashMap<Integer, Game> rooms) {
+    public static CardGame.CardServer.Builder welcomeClient(HashMap<Integer, Game> rooms) {
         CardGame.CardServer.Builder req = CardGame.CardServer.newBuilder();
         req.setType(CardGame.CardServer.SERVER_TYPE.WELCOME);
         StringBuilder str = new StringBuilder();
@@ -111,7 +112,7 @@ public class MessageHandler {
         return req;
     }
 
-    private static CardGame.CardServer.Builder addInRoom(HashMap<Integer, Game> rooms, int room, Channel ch) {
+    public static CardGame.CardServer.Builder addInRoom(HashMap<Integer, Game> rooms, int room, Channel ch) {
         CardGame.CardServer.Builder req = CardGame.CardServer.newBuilder()
                 .setType(CardGame.CardServer.SERVER_TYPE.FAILED)
                 .setName("You are already in a room");
