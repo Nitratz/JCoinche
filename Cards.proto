@@ -9,12 +9,12 @@ message CardClient {
 
     enum CLIENT_TYPE {
         CONNEXION = 0;
-        ROOM = 1;
-        CALL = 2;
-        DRAW = 3;
-        CARDS = 4;
-        LIAR = 5;
-        START = 6;
+        START = 1;
+        ROOM = 2;
+        LIAR = 3;
+        DRAW = 4;
+        CALL = 5;
+        CARDS = 6;
         DISCONNECT = 7;
   }
     CLIENT_TYPE Type = 3;
@@ -34,7 +34,8 @@ message CardServer {
         LIAR = 6;
         STARTED = 7;
         DISCONNECT = 8;
-        FAILED = 9;
+        WIN = 9;
+        FAILED = 10;
   }
     SERVER_TYPE Type = 3;
 }

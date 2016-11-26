@@ -14,8 +14,4 @@ public class JCoinche {
             System.out.println("Veuillez lancez le serveur avant le client.");
         }
     }
-
-    public static int Program(int a, int b) {
-        return a + b;
-    }
 }

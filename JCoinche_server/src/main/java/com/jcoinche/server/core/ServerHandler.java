@@ -19,8 +19,8 @@ public class ServerHandler extends SimpleChannelInboundHandler<CardGame.CardClie
 
     @Override
     public void channelUnregistered(ChannelHandlerContext ctx) throws Exception {
-        super.channelUnregistered(ctx);
-        //TODO Handle disconnection
+        HashMap<Integer, Game> rooms = RoomManager.getInstance().getmRooms();
+        MessageHandler.handleDisconnection(rooms, ctx.channel());
     }
 
     @Override

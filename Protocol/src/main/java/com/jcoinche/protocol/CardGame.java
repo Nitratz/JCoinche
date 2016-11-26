@@ -976,9 +976,13 @@ public final class CardGame {
        */
       DISCONNECT(8),
       /**
-       * <code>FAILED = 9;</code>
+       * <code>WIN = 9;</code>
        */
-      FAILED(9),
+      WIN(9),
+      /**
+       * <code>FAILED = 10;</code>
+       */
+      FAILED(10),
       UNRECOGNIZED(-1),
       ;
 
@@ -1019,9 +1023,13 @@ public final class CardGame {
        */
       public static final int DISCONNECT_VALUE = 8;
       /**
-       * <code>FAILED = 9;</code>
+       * <code>WIN = 9;</code>
        */
-      public static final int FAILED_VALUE = 9;
+      public static final int WIN_VALUE = 9;
+      /**
+       * <code>FAILED = 10;</code>
+       */
+      public static final int FAILED_VALUE = 10;
 
 
       public final int getNumber() {
@@ -1051,7 +1059,8 @@ public final class CardGame {
           case 6: return LIAR;
           case 7: return STARTED;
           case 8: return DISCONNECT;
-          case 9: return FAILED;
+          case 9: return WIN;
+          case 10: return FAILED;
           default: return null;
         }
       }
@@ -1677,13 +1686,13 @@ public final class CardGame {
       "ardClient.CLIENT_TYPE\"j\n\013CLIENT_TYPE\022\r\n\t" +
       "CONNEXION\020\000\022\010\n\004ROOM\020\001\022\010\n\004CALL\020\002\022\010\n\004DRAW\020" +
       "\003\022\t\n\005CARDS\020\004\022\010\n\004LIAR\020\005\022\t\n\005START\020\006\022\016\n\nDIS" +
-      "CONNECT\020\007\"\351\001\n\nCardServer\022\r\n\005Value\030\001 \001(\r\022" +
+      "CONNECT\020\007\"\362\001\n\nCardServer\022\r\n\005Value\030\001 \001(\r\022" +
       "\014\n\004Name\030\002 \001(\t\022;\n\004Type\030\003 \001(\0162-.com.jcoinc" +
-      "he.protocol.CardServer.SERVER_TYPE\"\200\001\n\013S" +
+      "he.protocol.CardServer.SERVER_TYPE\"\211\001\n\013S" +
       "ERVER_TYPE\022\013\n\007WELCOME\020\000\022\t\n\005CARDS\020\001\022\010\n\004TU",
       "RN\020\002\022\010\n\004DRAW\020\003\022\010\n\004CALL\020\004\022\010\n\004ROOM\020\005\022\010\n\004LI" +
-      "AR\020\006\022\013\n\007STARTED\020\007\022\016\n\nDISCONNECT\020\010\022\n\n\006FAI" +
-      "LED\020\tB\nB\010CardGameb\006proto3"
+      "AR\020\006\022\013\n\007STARTED\020\007\022\016\n\nDISCONNECT\020\010\022\007\n\003WIN" +
+      "\020\t\022\n\n\006FAILED\020\nB\nB\010CardGameb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
